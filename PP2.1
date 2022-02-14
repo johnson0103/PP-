@@ -1,0 +1,24 @@
+int radius = 50;
+int xSpeed = 2;
+int ySpeed = 0;
+int xLoc = 0;
+int yLoc = 0;
+
+void setup(){
+  size(500,500);
+  stroke(255);
+  fill(255);
+}
+
+void draw(){
+  background(0);
+  translate(xLoc,yLoc);
+  
+  circle(radius,height/2,radius*2);
+  
+  xLoc += xSpeed;
+  yLoc += ySpeed;
+  if(xLoc > (width - radius*2)){
+	xLoc = 0;
+  }
+}
