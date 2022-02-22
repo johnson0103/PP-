@@ -9,6 +9,7 @@ void setup() {
 }
 
 void draw() {
+ 
   for (int j = 0; j < 10; j ++) {
     for (int i = 0; i < 10; i ++) {
       if ((i + j + 1) % 2 == 0) {
@@ -16,6 +17,8 @@ void draw() {
       } else { 
         fill(255, 255, 255);               }
       rect(j * blockx, i * blocky, (j + 1) * blockx, (i + 1) * blocky);  
+       fill(0, 0, 0); 
+       square(width - 90, height-100, 100);
       }
     }
   }
