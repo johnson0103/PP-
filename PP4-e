@@ -1,0 +1,33 @@
+int width = 100;
+int height = 100;
+int blockx = width / 10;
+int blocky = height / 10;
+
+void setup() { 
+  size(width, height);
+  noLoop();
+}
+
+void draw() {
+ 
+  for (int j = 0; j < 10; j ++) {
+    for (int i = 0; i < 10; i ++) {
+      if ((i + j + 1) % 2 == 0) {
+        fill(0, 0, 0); 
+      } else { 
+        fill(255, 255, 255);               }
+      rect(j * blockx, i * blocky, (j + 1) * blockx, (i + 1) * blocky);  
+       fill(0, 0, 0); 
+       rect(width - 90, height - 10, 70, height);
+        rect(width - 100 , height - 20, 80, height);
+        rect(width - 110, height -30, 80, height);
+        rect(width - 120, height -40, 80, height);
+        rect(width - 130, height -50, 80, height);
+        rect(width - 140, height -60, 80, height);
+        rect(width - 150, height -70, 80, height);
+        rect(width - 160, height -80, 80, height);
+        
+      }
+      }
+    }
+  
