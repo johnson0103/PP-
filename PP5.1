@@ -1,0 +1,20 @@
+Ball ball = new Ball();
+Bubble bubble = new Bubble();
+void setup() {
+  size(1000,500);
+}
+
+void draw() {
+  background(200);
+  
+  
+  if (d < a + x) {
+   a += da;
+   x += dx;
+  }
+  ball.display();
+  ball.move();
+  bubble.display();
+  bubble.move();
+  
+}
