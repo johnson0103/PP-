@@ -1,0 +1,16 @@
+class Ball {
+  int y = 250;
+  int x = 50;
+  int dy = 0;
+  int dx = 1;
+  int size = 50;
+  
+  void move() {
+    x += dx;
+    y += dy;
+  }
+ 
+  void display() {
+    ellipse(x, y, size, size);
+  }
+}
