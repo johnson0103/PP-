@@ -1,0 +1,34 @@
+int blockX;
+int blockY;
+color white = color(255,255,255);
+color black = color(0,0,0);
+
+void setup() {
+  size(500, 500);
+  blockX = width / 10;
+  blockY = height / 10;
+  noLoop();
+  background(black);
+}
+
+void draw() {   
+  int boxX = 0;
+  int boxY = 0;
+  while(boxY < height){
+	color boxColor = white;
+	int tempX = boxX;
+	while(boxX < width){//Change this to be y and height
+  	fill(boxColor);
+  	rect(boxX,boxY,blockX,blockY);
+  	if(boxColor == white){
+    	boxColor = black;
+  	}
+  	else{
+    	boxColor = white;
+  	}
+  	boxX += blockX;//Change both of these to be y instead of x
+	}
+	boxX = tempX + blockX;
+	boxY += blockY;
+  }
+}
