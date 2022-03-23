@@ -1,11 +1,15 @@
 PVector location;
 PVector velocity;
+PVector velocityA;
+PVector locationA;
 
 void setup() {
   size(640, 360);
   location = new PVector(100, 100);
   velocity = new PVector(2.5, 5);
-}
+  velocityA = new PVector(620, 180);
+  locationA = new PVector(-3.5, -5);
+  }
 void draw() {
   background(255);
   
